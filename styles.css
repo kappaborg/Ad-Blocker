@@ -1,0 +1,102 @@
+/* General body style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  /* Popup container */
+  .popup-container {
+    background-color: rgba(20, 77, 182, 0.7); /* Slight transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 15px;
+    color:aqua;
+    font-weight: 600;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Button container */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .icon-heading {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 50px; /* Resizing the icon */
+    height: 50px;
+    margin-bottom: 10px; /* Spacing between icon and buttons */
+    animation: fadeIn 1s ease-out;
+    
+  }
+  
+  /* Popup buttons */
+  .popup-button {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+  }
+  
+  /* Hover and active effects */
+  .popup-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .popup-button:active {
+    background-color: #388e3c;
+    transform: scale(0.98);
+  }
+  
+  /* Slide-in effect */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .popup-container {
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  /* Fade-in effect for text */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  h1 {
+    animation: fadeIn 1s ease-out;
+  }
+  
